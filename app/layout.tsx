@@ -1,13 +1,17 @@
+import { ReactNode } from 'react';
 import '@/app/ui/global.css';
+import { inter } from './ui/fonts';
 
 const RootLayout = ({
   children
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) => {
   return (
     <html lang="eng">
-      <body>{ children }</body>
+      <body className={ `${ inter.className } antialiased` }>
+        { children }
+      </body>
     </html>
   );
 };
