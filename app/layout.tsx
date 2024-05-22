@@ -8,7 +8,7 @@ const RootLayout = ({
   children: ReactNode;
 }) => {
   return (
-    <html lang="eng">
+    <html lang="en">
       <body className={ `${ inter.className } antialiased` }>
         { children }
       </body>
